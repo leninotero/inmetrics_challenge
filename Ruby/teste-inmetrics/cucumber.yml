@@ -1,0 +1,17 @@
+# Plataform
+default: -p html_report -p json_report -p chrome
+default: -r features/support/ -r features/step_definitions
+api_log: -p http_log -p api
+#bundle exec cucumber --format pretty --format html --out=test_results/features_report.html
+#default: --publish
+
+# Reports
+json_report: --format pretty --format json --out=report/rubocop.html.json
+
+# Logs
+http_log: HTTP_LOG=true
+
+# Browsers
+firefox: BROWSER=firefox
+chrome: BROWSER=chrome
+internet_explorer: BROWSER=internet_explorer
