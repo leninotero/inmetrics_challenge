@@ -21,15 +21,15 @@ Editar Funcionário	| @edita_funcionario
 Remover Funcionário	| @remove_funcionario
 
 # Cenários API
-Nome Cenário 		| 	Tag
-------------------------------------------------
-POST - Cadastrar Usuario	| @post_usuario
+Nome Cenário 		            | 	Tag
+--------------------------- | --------------------
+POST - Cadastrar Usuario	  | @post_usuario
 GET - Listar Todos Usuarios	| @get_todos_usuarios
-GET - Listar Usuario		| @get_usuario
-PUT - Editar Usuario		| @alterar_usuario
+GET - Listar Usuario		    | @get_usuario
+PUT - Editar Usuario		    | @alterar_usuario
 
 # Execução dos Cenário:
-cucumber -t <Tag> 
+cucumber -t 
 
-Exemplo: 
+**Exemplo:** 
   cucumber -t @cadastro_usuario
