@@ -11,12 +11,12 @@
 * API:  https://inm-api-test.herokuapp.com/swagger-ui.html#/
 
 # Cenários App Web
-Nome Cenário 		| 	Tag
-------------------------------------------------
-Cadastrar Usuário	| @cadastro_usuario
-Login			| @login_success
-Login			| @login_notsuccess
-Cadastar Funcionário	| @cadastro_funcionario
+Nome Cenário 		    | 	Tag
+------------------- | -------------------------
+Cadastrar Usuário	  | @cadastro_usuario
+Login			          | @login_success
+Login			          | @login_notsuccess
+Cadastar Funcionário| @cadastro_funcionario
 Editar Funcionário	| @edita_funcionario
 Remover Funcionário	| @remove_funcionario
 
