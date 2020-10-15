@@ -10,6 +10,7 @@ json_report: --format pretty --format json --out=report/rubocop.html.json
 
 # Logs
 http_log: HTTP_LOG=true
+progress: --format progress
 
 # Browsers
 firefox: BROWSER=firefox

@@ -9,12 +9,10 @@ Quando('cadastro um usuário com nome de usuario {string}, a senha {string} e co
     find_field(name: 'username').set login    
     find_field(name: 'pass').set password
     find_field(name: 'confirmpass').set password
-    page.save_screenshot('./report/screenshots/Login001.png') 
     click_button "Cadastrar"
     sleep 3
 end
 
 Então('devo ver a pagina de login') do
     expect(page).to have_content('Login')
-    page.save_screenshot('./report/Login002.png') 
 end
