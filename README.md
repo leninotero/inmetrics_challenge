@@ -2,10 +2,16 @@
 
 # Setup
 `
-* gem install bundler
-* bundle install
-* gem install cucumber
-* gem install selenium-webdriver
+gem install bundler
+`
+`
+bundle install
+`
+`
+gem install cucumber
+`
+`
+gem install selenium-webdriver
 `
 
 # Ambientes 
