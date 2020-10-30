@@ -2,10 +2,10 @@
 
 # Setup
 `
- gem install bundler
- bundle install
- gem install cucumber
- gem install selenium-webdriver
+* gem install bundler
+* bundle install
+* gem install cucumber
+* gem install selenium-webdriver
 `
 
 # Ambientes 
@@ -31,7 +31,11 @@ GET - Listar Usuario		    | @get_usuario
 PUT - Editar Usuario		    | @alterar_usuario
 
 # Execução dos Cenário:
+`
 cucumber -t 
+`
 
 **Exemplo:** 
+`
   cucumber -t @cadastro_usuario
+`
