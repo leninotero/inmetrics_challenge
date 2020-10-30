@@ -1,10 +1,12 @@
 ## inmetrics_challenge
 
 # Setup
-* gem install bundler
-* bundle install
-* gem install cucumber
-* gem install selenium-webdriver
+`
+ gem install bundler
+ bundle install
+ gem install cucumber
+ gem install selenium-webdriver
+`
 
 # Ambientes 
 * Web Site: http://http://www.inmrobo.tk/accounts/login/
