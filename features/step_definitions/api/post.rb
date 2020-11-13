@@ -1,13 +1,14 @@
-Dado('que eu passe os dados do usuario') do                                  
+Dado('que eu passe os dados do usuario') do  
+    Faker::Config.locale = 'pt-BR'                                
     @body = {
-      "admissao": "12/12/2018",
-      "cargo": "Analista Sistemas",
+      "admissao": Faker::Date.in_date_period(year: 2020, month: 10),
+      "cargo": Faker::Job.employment_type,
       "comissao": "0,00",
       "cpf": "585.947.930-14",
       "departamentoId": 100,
-      "nome": "Teste api 2",
+      "nome": Faker::Name.name,
       "salario": "9.500,00",
-      "sexo": "m",
+      "sexo": Faker::Gender.short_binary_type,
       "tipoContratacao": "clt"
       }.to_json
   end                                                                          

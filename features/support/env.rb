@@ -6,6 +6,7 @@ require "httparty"
 require "httparty/request"
 require "httparty/response/headers"
 require "faker"
+require 'allure-cucumber'
 
 case ENV["BROWSER"]
 when "firefox"
@@ -25,6 +26,14 @@ when "headless"
   @driver = :selenium_chrome_headless
 else
   puts "Invalid browser"
+end
+
+Cucumber::Core::Test::Step.module_eval do
+  def name
+    return text if text == 'Before hook'
+    return text if text == 'After hook'
+    "#{source.last.keyword}#{text}"
+  end
 end
 
 

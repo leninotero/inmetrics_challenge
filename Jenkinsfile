@@ -5,7 +5,7 @@ pipeline {
         stage ('Build'){
             steps {
                 echo 'Building or Resolved Dependencies'
-                bat 'bundle install '
+                sh 'bundle install'
             }
         }
         

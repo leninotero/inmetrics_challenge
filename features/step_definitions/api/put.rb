@@ -1,6 +1,6 @@
 Dado('que eu deseje alterar alguns dados do usuario {string}') do |id|
     @body = {
-        "admissao": "30/04/1990",
+        "admissao": faker.Date(),
         "cargo": "QA Sênior",
         "comissao": "0,00",
         "cpf": "585.947.930-14",
