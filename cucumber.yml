@@ -1,11 +1,11 @@
 # Plataform
-default: allure
-#default: -p html_report -p json_report -p chrome
-#default: -r features/support/ -r features/step_definitions
+#default: allure
+default: -p html_report -p json_report -p chrome
+default: -r features/support/ -r features/step_definitions
 api_log: -p http_log -p api
 ci: -p headless -p json -p pretty
 headless: BROWSER=headless
-allure: --format AllureCucumber::Formatter --out=test_report
+#allure: --format AllureCucumber::Formatter --out=test_report
 #bundle exec cucumber --format pretty --format html --out=test_results/features_report.html
 #default: --publish
 
@@ -17,6 +17,4 @@ http_log: HTTP_LOG=true
 progress: --format progress
 
 # Browsers
-firefox: BROWSER=firefox
 chrome: BROWSER=chrome
-internet_explorer: BROWSER=internet_explorer
